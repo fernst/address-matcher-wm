@@ -1,6 +1,30 @@
-# Back End Coding AddressMatcher
+# Back End Coding 
 
-<h2>Please fork this repository and push when you are completed.</h2>
+<h2>Usage</h2>
+
+<h3>Run tests</h3>
+
+On the root of the project, run the following command:
+
+```mvn clean test```
+
+<h3>Build executable jar file</h3>
+
+On the root of the project, run the following command:
+
+```mvn clean package```
+
+<h3>Execute the program</h3>
+
+After execute the previous step, you can execute:
+
+```java -jar target/geolocation-finder.jar ```
+
+You'll see the output in STDOUT, and any errors/exceptions that are handled in STDERR
+
+<h2>Original Instructions</h2>
+
+<h3>Please fork this repository and push when you are completed.</h3>
 
 Write a program that reads the included file of addresses and finds the geolocation of each address.  
 
@@ -24,3 +48,4 @@ Example output
 **You may use a JSON library but otherwise stick to what comes with Java JDK
 
 We leave the implementation open ended so you can work comfortably using tech you are used to.
+
