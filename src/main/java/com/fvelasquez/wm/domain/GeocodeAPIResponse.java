@@ -3,6 +3,7 @@ package com.fvelasquez.wm.domain;
 import java.util.List;
 
 public class GeocodeAPIResponse {
+
     String status;
     List<Result> results;
 

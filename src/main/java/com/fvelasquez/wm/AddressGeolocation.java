@@ -33,6 +33,11 @@ public class AddressGeolocation {
 
     }
 
+    /**
+     * Read the Address list from the file stored in the classpath and return as a list of strings
+     *
+     * @return list of strings containing all addresses read from file.
+     */
     private static List<String> getAddressList() throws IOException {
 
         List<String> addressList = new LinkedList<>();
@@ -51,6 +56,13 @@ public class AddressGeolocation {
         return addressList;
     }
 
+    /**
+     * Create a new instance of the Address Matching service and match each address to it's geolocation.
+     *
+     * For performance reasons, the list is processed in a paralell stream.
+     *
+     * @return list of responses obtained from Google's Geocode API.
+     */
     private static List<Response> getResponseList(List<String> addressList) {
         AddressGeolocationService service = new AddressGeolocationService();
 
